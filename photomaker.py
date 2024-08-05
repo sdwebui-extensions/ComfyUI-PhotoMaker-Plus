@@ -23,8 +23,9 @@ import torchvision.transforms.v2 as T
 
 INSIGHTFACE_DIR = os.path.join(models_dir, "insightface")
 
-folder_names_and_paths["photomaker"] = ([os.path.join(models_dir, "photomaker")], supported_pt_extensions)
-add_model_folder_path("loras", folder_names_and_paths["photomaker"][0][0])
+# folder_names_and_paths["photomaker"] = ([os.path.join(models_dir, "photomaker")], supported_pt_extensions)
+for photo_folder in folder_names_and_paths["photomaker"][0]:
+    add_model_folder_path("loras", photo_folder)
 
 class PhotoMakerLoaderPlus:
     @classmethod
