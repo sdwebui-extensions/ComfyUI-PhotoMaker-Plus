@@ -1,6 +1,6 @@
 {
-  "last_node_id": 204,
-  "last_link_id": 461,
+  "last_node_id": 216,
+  "last_link_id": 477,
   "nodes": [
     {
       "id": 3,
@@ -14,7 +14,7 @@
         "1": 470
       },
       "flags": {},
-      "order": 32,
+      "order": 36,
       "mode": 0,
       "inputs": [
         {
@@ -70,54 +70,6 @@
       ]
     },
     {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        -330,
-        130
-      ],
-      "size": {
-        "0": 315,
-        "1": 98
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            447,
-            459
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            427,
-            428,
-            429
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [],
-          "slot_index": 2
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "realvisxlV40_v40Bakedvae.safetensors"
-      ]
-    },
-    {
       "id": 5,
       "type": "EmptyLatentImage",
       "pos": [
@@ -129,7 +81,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "outputs": [
         {
@@ -241,7 +193,7 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch, open mouth"
+        "asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth"
       ],
       "color": "#322",
       "bgcolor": "#533"
@@ -258,7 +210,7 @@
         "1": 46
       },
       "flags": {},
-      "order": 35,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
@@ -298,7 +250,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "outputs": [
         {
@@ -317,7 +269,7 @@
         "Run widget replace on values": false
       },
       "widgets_values": [
-        "asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch, open mouth"
+        "asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth"
       ],
       "color": "#322",
       "bgcolor": "#533"
@@ -334,7 +286,7 @@
         "1": 140
       },
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "outputs": [
         {
@@ -449,7 +401,7 @@
         "1": 550
       },
       "flags": {},
-      "order": 31,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -567,7 +519,7 @@
         26
       ],
       "flags": {},
-      "order": 30,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -611,7 +563,7 @@
         {
           "name": "",
           "type": "*",
-          "link": 461
+          "link": 476
         }
       ],
       "outputs": [
@@ -681,7 +633,7 @@
         "1": 50
       },
       "flags": {},
-      "order": 34,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
@@ -810,14 +762,14 @@
       "type": "LoadImage",
       "pos": [
         60,
-        700
+        1240
       ],
-      "size": {
-        "0": 320,
-        "1": 310
-      },
+      "size": [
+        320,
+        310
+      ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "outputs": [
         {
@@ -849,14 +801,14 @@
       "type": "LoadImage",
       "pos": [
         60,
-        1080
+        860
       ],
-      "size": {
-        "0": 320,
-        "1": 310
-      },
+      "size": [
+        320,
+        310
+      ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "outputs": [
         {
@@ -895,7 +847,7 @@
         26
       ],
       "flags": {},
-      "order": 25,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -931,7 +883,7 @@
         "1": 80
       },
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "outputs": [
         {
@@ -970,7 +922,7 @@
         "1": 50
       },
       "flags": {},
-      "order": 36,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
@@ -1062,7 +1014,7 @@
         "1": 80
       },
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "outputs": [
         {
@@ -1101,7 +1053,7 @@
         "1": 80
       },
       "flags": {},
-      "order": 33,
+      "order": 37,
       "mode": 0,
       "inputs": [
         {
@@ -1150,7 +1102,7 @@
         "1": 450
       },
       "flags": {},
-      "order": 39,
+      "order": 43,
       "mode": 0,
       "inputs": [
         {
@@ -1248,7 +1200,7 @@
       "type": "VAEDecode",
       "pos": [
         1930,
-        1320
+        1310
       ],
       "size": {
         "0": 210,
@@ -1257,7 +1209,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 40,
+      "order": 44,
       "mode": 0,
       "inputs": [
         {
@@ -1298,7 +1250,7 @@
         "1": 370
       },
       "flags": {},
-      "order": 38,
+      "order": 42,
       "mode": 0,
       "inputs": [
         {
@@ -1324,7 +1276,7 @@
         "1": 370
       },
       "flags": {},
-      "order": 37,
+      "order": 41,
       "mode": 0,
       "inputs": [
         {
@@ -1350,7 +1302,7 @@
         "1": 440
       },
       "flags": {},
-      "order": 41,
+      "order": 45,
       "mode": 0,
       "inputs": [
         {
@@ -1423,7 +1375,7 @@
       "widgets_values": [
         "(No style)",
         "sci-fi, closeup portrait photo of a woman img wearing the sunglasses in Iron man suit, face, slim body, high quality, film grain",
-        "asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch, open mouth"
+        "asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1440,7 +1392,7 @@
         "1": 140
       },
       "flags": {},
-      "order": 27,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -1506,7 +1458,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "outputs": [
         {
@@ -1539,7 +1491,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "outputs": [
         {
@@ -1563,11 +1515,11 @@
       "id": 195,
       "type": "ImageBatchMulti",
       "pos": [
-        430,
-        960
+        420,
+        1450
       ],
       "size": {
-        "0": 210,
+        "0": 310,
         "1": 102
       },
       "flags": {},
@@ -1590,7 +1542,7 @@
           "name": "images",
           "type": "IMAGE",
           "links": [
-            417
+            471
           ],
           "slot_index": 0,
           "shape": 3
@@ -1606,21 +1558,21 @@
       "id": 196,
       "type": "RepeatImageBatch",
       "pos": [
-        430,
-        830
+        420,
+        700
       ],
       "size": {
         "0": 220,
         "1": 60
       },
       "flags": {},
-      "order": 21,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
           "name": "image",
           "type": "IMAGE",
-          "link": 417
+          "link": 474
         }
       ],
       "outputs": [
@@ -1642,6 +1594,42 @@
       ]
     },
     {
+      "id": 199,
+      "type": "PrimitiveNode",
+      "pos": [
+        840,
+        90
+      ],
+      "size": {
+        "0": 210,
+        "1": 80
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            443
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "title": "Seed",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        1084347908952419,
+        "randomize"
+      ]
+    },
+    {
       "id": 201,
       "type": "Reroute",
       "pos": [
@@ -1653,7 +1641,7 @@
         26
       ],
       "flags": {},
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1684,6 +1672,232 @@
       }
     },
     {
+      "id": 206,
+      "type": "AutoCropFaces",
+      "pos": [
+        420,
+        970
+      ],
+      "size": {
+        "0": 320,
+        "1": 200
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 459
+        }
+      ],
+      "outputs": [
+        {
+          "name": "face",
+          "type": "IMAGE",
+          "links": [
+            472
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CROP_DATA",
+          "type": "CROP_DATA",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AutoCropFaces"
+      },
+      "widgets_values": [
+        32,
+        2.5327556900618142,
+        0.5275884072513642,
+        0,
+        1,
+        "1:1"
+      ]
+    },
+    {
+      "id": 207,
+      "type": "PreviewImage",
+      "pos": [
+        820,
+        780
+      ],
+      "size": {
+        "0": 210,
+        "1": 250
+      },
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 473
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 208,
+      "type": "ConstrainImage|pysssss",
+      "pos": [
+        420,
+        1240
+      ],
+      "size": {
+        "0": 320,
+        "1": 154
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 471
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            459
+          ],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConstrainImage|pysssss"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        0,
+        0,
+        "no"
+      ]
+    },
+    {
+      "id": 215,
+      "type": "ImageListToImageBatch",
+      "pos": [
+        420,
+        860
+      ],
+      "size": {
+        "0": 210,
+        "1": 26
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 472
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            473,
+            474
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageListToImageBatch"
+      }
+    },
+    {
+      "id": 197,
+      "type": "Note",
+      "pos": [
+        70,
+        690
+      ],
+      "size": [
+        300,
+        70
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "If you only have a few images, try repeating it to increase the resemblance."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -330,
+        130
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            447,
+            475
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            427,
+            428,
+            429
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "realvisxlV40_v40Bakedvae.safetensors"
+      ]
+    },
+    {
       "id": 74,
       "type": "PhotoMakerLoaderPlus",
       "pos": [
@@ -1697,7 +1911,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 10,
+      "order": 12,
       "mode": 0,
       "outputs": [
         {
@@ -1705,7 +1919,7 @@
           "type": "PHOTOMAKER",
           "links": [
             168,
-            460
+            477
           ],
           "shape": 3,
           "slot_index": 0
@@ -1721,29 +1935,29 @@
       "bgcolor": "#535"
     },
     {
-      "id": 204,
+      "id": 216,
       "type": "PhotoMakerLoraLoaderPlus",
       "pos": [
         -330,
-        -50
+        -30
       ],
       "size": {
         "0": 315,
         "1": 78
       },
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 459
+          "link": 475
         },
         {
           "name": "photomaker",
           "type": "PHOTOMAKER",
-          "link": 460
+          "link": 477
         }
       ],
       "outputs": [
@@ -1751,7 +1965,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            461
+            476
           ],
           "shape": 3,
           "slot_index": 0
@@ -1765,65 +1979,6 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
-    },
-    {
-      "id": 199,
-      "type": "PrimitiveNode",
-      "pos": [
-        840,
-        90
-      ],
-      "size": [
-        280,
-        80
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            443
-          ],
-          "slot_index": 0,
-          "widget": {
-            "name": "value"
-          }
-        }
-      ],
-      "title": "Seed",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        1084347908952419,
-        "randomize"
-      ]
-    },
-    {
-      "id": 197,
-      "type": "Note",
-      "pos": [
-        430,
-        700
-      ],
-      "size": {
-        "0": 240,
-        "1": 70
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "If you only have a few images, try repeating it to increase the resemblance."
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -2188,14 +2343,6 @@
       "IMAGE"
     ],
     [
-      417,
-      195,
-      0,
-      196,
-      0,
-      "IMAGE"
-    ],
-    [
       427,
       4,
       1,
@@ -2301,27 +2448,67 @@
     ],
     [
       459,
+      208,
+      0,
+      206,
+      0,
+      "IMAGE"
+    ],
+    [
+      471,
+      195,
+      0,
+      208,
+      0,
+      "IMAGE"
+    ],
+    [
+      472,
+      206,
+      0,
+      215,
+      0,
+      "IMAGE"
+    ],
+    [
+      473,
+      215,
+      0,
+      207,
+      0,
+      "IMAGE"
+    ],
+    [
+      474,
+      215,
+      0,
+      196,
+      0,
+      "IMAGE"
+    ],
+    [
+      475,
       4,
       0,
-      204,
+      216,
       0,
       "MODEL"
     ],
     [
-      460,
-      74,
-      0,
-      204,
-      1,
-      "PHOTOMAKER"
-    ],
-    [
-      461,
-      204,
+      476,
+      216,
       0,
       24,
       0,
       "*"
+    ],
+    [
+      477,
+      74,
+      0,
+      216,
+      1,
+      "PHOTOMAKER"
     ]
   ],
   "groups": [
@@ -2365,10 +2552,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6208089192708338,
+      "scale": 0.5609537760416666,
       "offset": [
-        372.1121827861227,
-        374.3978697891403
+        351.07756961062483,
+        56.208386262223236
       ]
     },
     "0246.VERSION": [

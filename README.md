@@ -6,7 +6,7 @@ PhotoMaker implementation that follows the ComfyUI way of doing things. The code
 
 <div align="center">
 
-  <img width="1261" alt="example workflow" src="https://github.com/user-attachments/assets/412741f1-49de-4bf0-9101-82e1e205a133">
+  <img width="1261" alt="example workflow" src="https://github.com/user-attachments/assets/0b05d24f-ec3a-4be7-9e93-9169c66c65f5">
   
 </div>
 
@@ -20,17 +20,19 @@ PhotoMaker implementation that follows the ComfyUI way of doing things. The code
     git clone https://github.com/shiimizu/ComfyUI-PhotoMaker-Plus.git
     ```
 4. Download the model(s) from Hugging Face ([V1](https://huggingface.co/TencentARC/PhotoMaker), [V2](https://huggingface.co/TencentARC/PhotoMaker-V2)) and place it in a `photomaker` folder in your `models` folder such as `ComfyUI/models/photomaker`.
-5. Load the LoRA within the model using the `LoraLoaderModelOnly` node.
+5. Check out the [example workflows](https://github.com/shiimizu/ComfyUI-PhotoMaker-Plus/tree/main/examples).
 
 ## Features of this `Plus` version
 
 * Better face resemblance by using `CLIPImageProcessor` like in the original code.
-* Automatic PhotoMaker LoRA detection & loading via the LoraLoader nodes.
 * Customizable trigger word
 * Allows multiple trigger words in the prompt
 * Extra nodes such as `PhotoMakerStyles` and `PrepImagesForClipVisionFromPath`
 
 ## Important news
+
+**2024-09-01**
+* A `PhotoMakerLoraLoaderPlus` node was added. Use that to load the LoRA.
 
 **2024-07-26**
 * Support for PhotoMaker V2. This uses InsightFace, so make sure to use the new `PhotoMakerLoaderPlus` and `PhotoMakerInsightFaceLoader` nodes.
